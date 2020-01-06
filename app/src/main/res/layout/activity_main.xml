@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/ip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="ip of the server"
+        android:hint="ip of the server"
+        android:inputType="text"
+        android:text="68.183.215.28" />
+
+    <EditText
+        android:id="@+id/game_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="Game"
+        android:ems="10"
+        android:hint="Game"
+        android:inputType="textPersonName"
+        android:text="Guacamole" />
+
+    <Button
+        android:id="@+id/getBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GET" />
+
+    <Button
+        android:id="@+id/postBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="POST" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/logger"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:reverseLayout="true"
+        app:stackFromEnd="true"></androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
